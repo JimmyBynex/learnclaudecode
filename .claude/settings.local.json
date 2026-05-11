@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:deepwiki.com)",
+      "Bash(go test *)",
+      "Bash(go build *)",
+      "Bash(go list *)",
+      "Bash(go get *)",
+      "Bash(/d/A/code/claude/learnclaudecode/claude-code/claude-go *)",
+      "Bash(xargs grep *)",
+      "Bash(go vet *)",
+      "Bash(go mod *)"
+    ]
+  }
+}

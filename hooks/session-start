@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SKILLS_DIR="$SCRIPT_DIR/../skills"
+
+if [ ! -d "$SKILLS_DIR" ]; then
+    exit 0
+fi
+
+for skill_file in "$SKILLS_DIR"/*/SKILL.md; do
+    if [ -f "$skill_file" ]; then
+        cat "$skill_file"
+        echo ""
+        echo "---"
+        echo ""
+    fi
+done
