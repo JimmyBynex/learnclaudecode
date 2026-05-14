@@ -168,7 +168,6 @@ func CallModel(ctx context.Context, p query.CallModelParams) (<-chan query.Strea
 				return
 			}
 		}
-
 	}()
 	return ch, nil
 }
@@ -183,6 +182,8 @@ func readSSE(scanner *bufio.Scanner) (*sseEvent, error) {
 	for scanner.Scan() {
 		//这就是scanner的好处，能够自己实现/n分割
 		line := scanner.Text()
+		//sse协议规定，每个event传输之间一定会有空行
+		//至于为什么要continue，因为有可能流开头或者是心跳行，因此当检测到空行的时候，要判断当前的状态
 		if line == "" {
 			//保证有数据
 			if se.name != "" && se.data != "" {
