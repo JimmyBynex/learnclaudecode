@@ -79,7 +79,7 @@ func (ca *contentAccumulator) buildAt(index int) (ContentBlock, error) {
 
 	case "thinking":
 		return ThinkingBlock{Type: "thinking", Thinking: string(ca.block[index].thinking)}, nil
-	case "input_json":
+	case "tool_use":
 		var input map[string]any
 		if err := json.Unmarshal(ca.block[index].inputJSON, &input); err != nil {
 			return nil, err
@@ -93,6 +93,8 @@ func Query(ctx context.Context, q QueryParams) (<-chan Message, <-chan Terminal)
 	msgCh := make(chan Message, 64)
 	termCh := make(chan Terminal, 1)
 	go func() {
+		defer close(msgCh)
+		defer close(termCh)
 		queryLoop(ctx, q, msgCh, termCh)
 	}()
 	return msgCh, termCh
@@ -366,13 +368,20 @@ func executeOneTool(ctx context.Context, tu ToolUseBlock) ToolResultBlock {
 	var output string
 	switch tu.Name {
 	case "bash":
-		output, isErr = executeBash(tu.Input["command"].(string))
+		cmd, ok := tu.Input["command"].(string)
+		if !ok {
+			return ToolResultBlock{
+				Type: "tool_result", ToolUseID: tu.ID,
+				Content: "invalid command input", IsError: true,
+			}
+		}
+		output, isErr = executeBash(cmd)
 	default:
 		isErr = false
 		output = fmt.Sprintf("Unknown tool '%s'", tu.Name)
 	}
 	return ToolResultBlock{
-		Type:      "tool_use",
+		Type:      "tool_result",
 		ToolUseID: tu.ID,
 		Content:   output,
 		IsError:   isErr,

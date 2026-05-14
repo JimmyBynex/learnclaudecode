@@ -11,7 +11,10 @@
       "Bash(/d/A/code/claude/learnclaudecode/claude-code/claude-go *)",
       "Bash(xargs grep *)",
       "Bash(go vet *)",
-      "Bash(go mod *)"
+      "Bash(go mod *)",
+      "Read(//usr/local/go/bin/**)",
+      "Read(//Users/xzk/go/bin/**)",
+      "Read(//opt/homebrew/bin/**)"
     ]
   }
 }

@@ -125,6 +125,9 @@ func CallModel(ctx context.Context, p query.CallModelParams) (<-chan query.Strea
 	}
 	//为什么byte还要放进缓冲流，可以详细了解http/tcp运作逻辑
 	req, err := http.NewRequestWithContext(ctx, http.MethodPost, anthropicAPIURL, bytes.NewReader(bodyBytes))
+	if err != nil {
+		return nil, fmt.Errorf("create request: %w", err)
+	}
 	req.Header.Set("x-api-key", apiKey)
 	req.Header.Set("anthropic-version", anthropicAPIVersion)
 	req.Header.Set("content-type", "application/json")
