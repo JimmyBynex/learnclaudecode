@@ -1,70 +1,37 @@
 {
   "main": {
-    "id": "c8c51404ac765f44",
+    "id": "afe06939dc79d46f",
     "type": "split",
     "children": [
       {
-        "id": "6052d9fa1a658ae6",
+        "id": "33a094f8653f0c16",
         "type": "tabs",
         "children": [
           {
-            "id": "46521db1279eb450",
+            "id": "ba0484346ca5c4cc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Anthropic Claude API 完整指南 (2026年最新版).md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Anthropic Claude API 完整指南 (2026年最新版)"
-            }
-          },
-          {
-            "id": "0e6782394f417f99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "phase-01-trajectory-guide.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "phase-01-trajectory-guide"
-            }
-          },
-          {
-            "id": "528f387178eb681b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "phase-01-trajectory-guide.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "phase-01-trajectory-guide"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "9d89342004bf0f6b",
+    "id": "9017562f7029935b",
     "type": "split",
     "children": [
       {
-        "id": "eef7f42fc47a0714",
+        "id": "4d6247fb0f545453",
         "type": "tabs",
         "children": [
           {
-            "id": "5f859bfd72aad937",
+            "id": "a4cc2bb742a4cf79",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,7 +44,7 @@
             }
           },
           {
-            "id": "c85ae0312143918c",
+            "id": "5ae5a64140cafa7f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -94,7 +61,7 @@
             }
           },
           {
-            "id": "64a0eb1645f96e95",
+            "id": "6b0a41ea232e7ffd",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -107,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "b73b92dc49e742d8",
+    "id": "c4bf9e197e656c5b",
     "type": "split",
     "children": [
       {
-        "id": "88f594db22104ee5",
+        "id": "2b84439629bbf4ee",
         "type": "tabs",
         "children": [
           {
-            "id": "a05d4b6ecbbdd9a3",
+            "id": "92674715fd4c5a7a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "design 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
-            "id": "d83ef2fa7ecc9f6f",
+            "id": "6e803486ae7b3d66",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "design 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "e7d76d6b8677850f",
+            "id": "a5ca1517a22a80a7",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -166,7 +131,7 @@
             }
           },
           {
-            "id": "5f11a9f6ab7b6004",
+            "id": "45d9da997d9242c6",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -180,18 +145,17 @@
             }
           },
           {
-            "id": "a79f4284a171d393",
+            "id": "b737aaa26799cded",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "design.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "design 的大纲"
+              "title": "大纲"
             }
           }
         ]
@@ -212,21 +176,6 @@
       "bases:新建数据库": false
     }
   },
-  "active": "0e6782394f417f99",
-  "lastOpenFiles": [
-    "phase-02-tools-guide.md.tmp.14880.ba06f5cc218f",
-    "phase-03-cache-guide.md.tmp.14880.91f0b6bc4667",
-    "phase-02-tools-guide.md.tmp.14880.f57fdbc52a08",
-    "phase-03-cache-guide.md.tmp.14880.3c5a309744cd",
-    "phase-02-tools-guide.md.tmp.14880.73d33321e671",
-    "phase-03-cache-guide.md.tmp.14880.154decd9bcc2",
-    "Anthropic Claude API 完整指南 (2026年最新版) (1).md",
-    "phase-01-trajectory-guide.md",
-    "Anthropic Claude API 完整指南 (2026年最新版).md",
-    "Anthropic Claude API  Block.md",
-    "phase-03-cache-guide.md",
-    "phase-02-tools-guide.md",
-    "phase-03-cache-guide.md.tmp.4396.1776668950170",
-    "design.md"
-  ]
+  "active": "ba0484346ca5c4cc",
+  "lastOpenFiles": []
 }
