@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "phase-01-trajectory-guide.md",
+                "file": "phase-02-tools-guide.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "phase-01-trajectory-guide"
+              "title": "phase-02-tools-guide"
             }
           }
         ],
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b73b92dc49e742d8",
@@ -214,9 +215,9 @@
   },
   "active": "528f387178eb681b",
   "lastOpenFiles": [
+    "phase-01-trajectory-guide.md",
     "phase-03-cache-guide.md",
     "design.md",
-    "phase-01-trajectory-guide.md",
     "learnclaudecode/欢迎.md",
     "phase-02-tools-guide.md.tmp.14880.ba06f5cc218f",
     "phase-03-cache-guide.md.tmp.14880.91f0b6bc4667",
